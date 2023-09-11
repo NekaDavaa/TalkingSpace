@@ -2,7 +2,7 @@
 
 <?php
 //Get Template & Assign Vars
-$template = new Template('templates/topic.php');
+$template = new Template('templates/topic.html');
 echo $template;
-
+	
 ?>
