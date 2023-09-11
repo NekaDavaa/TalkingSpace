@@ -11,6 +11,8 @@ require_once('helpers/format_helper.php');
 require_once('helpers/db_helper.php');
 
 //Autoload Classes
-function __autoload($class_name){
-	require_once('libraries/'.$class_name . '.php');
+function my_autoloader($class_name) {
+    require_once('libraries/' . $class_name . '.php');
 }
+
+spl_autoload_register('my_autoloader');
