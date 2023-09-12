@@ -12,7 +12,7 @@
 								<div class="topic-content pull-right">
 									<h3><a href="topic.php?id=<?php echo $topic->id; ?>"><?php echo $topic->title ?></a></h3>
 									<div class="topic-info">
-										<a href="category.php"><?php echo $topic->name ?></a> >> <a href="profile.php"><?php echo $topic->username ?></a> >> Posted on: <?php echo FormatDate($topic->create_date) ?>
+										<a href="topics.php?category=<?php echo urlFormat($topic->category_id); ?>"><?php echo $topic->name ?></a> >> <a href="<?php echo BASE_URI; ?>topics.php?user=<?php echo $topic->user_id; ?>"><?php echo $topic->username ?></a> >> Posted on: <?php echo FormatDate($topic->create_date) ?>
 										<span class="badge pull-right"><?php echo ReplyCount($topic->id);?></span>
 									</div>
 								</div>
