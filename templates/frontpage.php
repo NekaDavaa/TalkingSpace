@@ -13,7 +13,7 @@
 									<h3><a href="topic.php"><?php echo $topic->title ?></a></h3>
 									<div class="topic-info">
 										<a href="category.php"><?php echo $topic->name ?></a> >> <a href="profile.php"><?php echo $topic->username ?></a> >> Posted on: <?php echo FormatDate($topic->create_date) ?>
-										<span class="badge pull-right">3</span>
+										<span class="badge pull-right"><?php echo ReplyCount($topic->id);?></span>
 									</div>
 								</div>
 							</div>
