@@ -10,7 +10,7 @@
 							</div>
 							<div class="col-md-10">
 								<div class="topic-content pull-right">
-									<h3><a href="topic.php"><?php echo $topic->title ?></a></h3>
+									<h3><a href="topic.php?id=<?php echo $topic->id; ?>"><?php echo $topic->title ?></a></h3>
 									<div class="topic-info">
 										<a href="category.php"><?php echo $topic->name ?></a> >> <a href="profile.php"><?php echo $topic->username ?></a> >> Posted on: <?php echo FormatDate($topic->create_date) ?>
 										<span class="badge pull-right"><?php echo ReplyCount($topic->id);?></span>
@@ -27,7 +27,7 @@
 						<h3>Forum Statistics</h3>
 					<ul>
 						<li>Total Number of Users: <strong>52</strong></li>
-						<li>Total Number of Topics: <strong>10</strong></li>
-						<li>Total Number of Categories: <strong>5</strong></li>
+						<li>Total Number of Topics: <strong><?php echo $getTotalTopics ?></strong></li>
+						<li>Total Number of Categories: <strong><?php echo $getTotalCategories ?></strong></li>
 					</ul>
 <?php include('includes/footer.php'); ?>	

@@ -12,6 +12,8 @@ $template = new Template('templates/frontpage.php');
 
 //Assign Vars
 $template->topics = $toppic->getAllTopics();
+$template->getTotalTopics = $toppic->getTotalTopics();
+$template->getTotalCategories = $toppic->getTotalCategories();
 
 
 
