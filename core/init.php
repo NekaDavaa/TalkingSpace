@@ -11,6 +11,7 @@ require_once('helpers/format_helper.php');
 require_once('helpers/db_helper.php');
 require_once('libraries/Database.php');
 require_once('libraries/Toppic.php');
+require_once('libraries/User.php');
 
 
 //Autoload Classes

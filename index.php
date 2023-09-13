@@ -5,7 +5,7 @@
 //Object Toppic class
 $toppic = new Toppic;
 
-
+$user = new User;
 
 //Get Template & Assign Vars
 $template = new Template('templates/frontpage.php');
@@ -14,6 +14,7 @@ $template = new Template('templates/frontpage.php');
 $template->topics = $toppic->getAllTopics();
 $template->getTotalTopics = $toppic->getTotalTopics();
 $template->getTotalCategories = $toppic->getTotalCategories();
+$template->getTotalUsers = $user->getTotalUsers();
 
 
 
