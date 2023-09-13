@@ -37,12 +37,9 @@
 				$count_topic = $toppic->getTotalTopics();
                 echo $count_topic;
 				 ?> </span></a> 
-			
                         	  <?php foreach(getCategories() as $category) : ?>
 						<a href="topics.php?category=<?php echo $category->id; ?>" class="list-group-item <?php echo is_active($category->id); ?>"><?php echo $category->name; ?></a> 
 					<?php endforeach; ?>
-
-
 					</div>
 				</div>	
 				</div>
